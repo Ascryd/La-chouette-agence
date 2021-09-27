@@ -1057,3 +1057,7 @@ article .citation {
 article .source {
     font-size: 1em;
 }
+
+:focus {
+    border: solid rgb(0, 0, 0) 5px;
+}
