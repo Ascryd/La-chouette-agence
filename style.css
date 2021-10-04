@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -736,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .portfolio-thumb {
@@ -775,16 +775,16 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #171717!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #181818;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #824630!important;
     color: #FFFFFF!important;
 }
 
@@ -810,19 +810,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +848,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +872,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +881,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1039,4 +1034,38 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+
+
+
+article {
+    max-width: 550px;
+    min-width: 300px;
+    margin: auto;
+    padding: 0 10px 0 10px;
+}
+
+article .citation {
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+article .source {
+    font-size: 1em;
+}
+
+:focus {
+    border: solid rgb(0, 0, 0) 3px;
+}
+
+.correct-black {
+    color: #000000;
+}
+
+.orange-bloc {
+    background-color: #F3976C;
+    padding: 10px 0 10px 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
 }
